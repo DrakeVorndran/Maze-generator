@@ -1,4 +1,4 @@
-float res = 1;
+float res = 400;
 float[][] grid;
 float dif = 0.50;
 float zoom = 15;
@@ -136,7 +136,8 @@ void build() {
   grid[1][1]=2;
 }
 void setup() {
-  size(400, 400);
+  size(800, 800);
+  res = height/res;
   zoom = (width/res)/zoom;
   defZ = zoom;
   py = height/2;
